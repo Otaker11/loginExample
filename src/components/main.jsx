@@ -1,9 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Login from './Login.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import LoginBox from "../components/LoginBox.jsx";
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-    <Login></Login>
-)
+root.render(<LoginBox></LoginBox>);

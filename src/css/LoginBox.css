@@ -1,0 +1,218 @@
+/*Parte general de los stilos*/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(https://i.pinimg.com/originals/96/1c/b6/961cb6670b0d1d2b9ff492f0eec3ce96.jpg);
+  background-size: cover;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.626);
+}
+
+.inputTitle {
+  color: #fff;
+}
+
+.loginBox {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.573);
+  border-radius: 10%;
+}
+
+.loginBox input {
+  background: rgba(132, 128, 114, 0.623);
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+  color: #fff;
+}
+
+.loginBox input:hover {
+  background: rgba(232, 53, 53, 0.66);
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: groove;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.loginButton {
+  background: #91734797;
+  border-radius: 5%;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.loginButton:hover {
+  border-style: outset;
+  border-color: #ffffffe8;
+  background-color: rgba(232, 53, 53, 0.66);
+}
+
+.question {
+  color: #fff;
+}
+
+.spanLogin {
+  color: #ffffff;
+}
+
+.spanLogin:hover {
+  color: rgba(232, 53, 53, 0.66);
+}
+
+/*Parte especifica para la responsividad de los estilos*/
+@media screen and (min-width: 1333px) and (max-width: 3000px) {
+  .background-body {
+    height: 100vh;
+    width: 100vh;
+    position: cover;
+    overflow: hidden;
+  }
+
+  .box-space {
+    width: 580px;
+    height: 450px;
+    position: absolute;
+    top: calc(15vh - 0vh);
+    left: calc(65vh - 5vh);
+    position: absolute;
+  }
+
+
+  .loginBox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  .logo {
+    width: 320px;
+    height: 70px;
+    padding-left: 130px;
+  }
+
+  .inputTitle {
+    margin-left: 90px;
+    font-size: 18px;
+  }
+
+  .loginBox input {
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 0;
+  }
+
+  .loginButton {
+    border-style: outset;
+    border-color: #917447;
+    padding: 10px;
+    font-size: 20px;
+    width: 230px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+
+  .question {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .spanLogin {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1332px) {
+
+  .background-body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .box-space {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    position: absolute;
+    border-radius: 70%;
+  }
+
+  .logo {
+    width: 320px;
+    height: 70px;
+    padding-left: 55px;
+  }
+
+
+  .inputTitle {
+    margin-left: 50px;
+    font-size: 18px;
+  }
+
+  .loginBox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  .loginBox input {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 0;
+  }
+
+  .loginButton {
+    border-style: outset;
+    border-color: #917447;
+    padding: 10px;
+    font-size: 18px;
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .question {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .spanLogin {
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-height: 0px) and (max-height: 550px) {
+  .box-space {
+    width: 400px;
+    height: 380px;
+    top: calc(5vh - 0vh);
+    left: calc(50vh - 10vh);
+    position: absolute;
+  }
+}
